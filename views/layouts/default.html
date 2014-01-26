@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ template:title }}</title>
+    {{ template:metadata }}
+    {{ theme:css file="style.min.css" }}
+    <script src="//localhost:35729/livereload.js"></script>
+</head>
+<body>
+	<div class="grid">
+		<header class="grid__item">
+			{{ theme:partial name="header" }}
+		</header>
+
+		<section class="body grid__item">
+			{{ template:body }}
+		</section>
+	    	
+		<footer class="grid__item">
+			{{ theme:partial name="footer" }}
+		</footer>
+	</div>
+	{{ theme:js file="/components/jquery.js" }}
+	{{ theme:js file="scripts.min.js" }}
+</body>
+</html>
